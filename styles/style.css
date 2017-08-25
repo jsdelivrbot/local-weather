@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+}
+
+body {
+  background-image: url('../assets/images/background-image.jpg');
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.container {
+  width: 100%;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-30%);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.container > div {
+  background: #29667F;
+  background: linear-gradient(to right, #29667F, #3D9ABF);
+  color: white;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.city-container {
+  margin-bottom: 30px;
+}
+
+.temperature-container {
+  margin-bottom: 20px;
+  font-size: 25px;
+}
+
+.pressure-container,
+.humidity-container {
+  background-color: grey;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.humidity-container {
+  margin-left: 10px;
+}
+
+.pressure-container:hover,
+.humidity-container:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.pressure-title,
+.humidity-title {
+  font-size: 21px;
+  text-decoration: underline;
+}
+
+.pressure,
+.humidity {
+  font-size: 17px;
+}

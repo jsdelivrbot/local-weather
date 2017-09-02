@@ -53,20 +53,20 @@ export default class App extends Component {
         </div>
         <div className="row">
           <div className="temperature-container col-xs-12">
-            <p className="temperature text-xs-center">{this.state.temperature} °C</p>
+            <p className="temperature text-xs-center">{this.state.temperature * (9 / 5) + 32} °F</p>
           </div>
         </div>
         <div className="row">
-          <div className="col-xs-12">
-            <div className="pressure-container col-md-3 col-md-offset-3 text-xs-center">
-              <p className="pressure-title">Pressure</p>
-              <p className="pressure">{this.state.pressure} K</p>
-            </div>
-            <div className="humidity-container col-md-3 text-xs-center">
-              <p className="humidity-title">Humidity</p>
-              <p className="humidity">{this.state.humidity} %</p>
-            </div>
+          <div className="col-xs-3" />
+          <div className="pressure-container col-xs-3 text-xs-center">
+            <p className="pressure-title">Pressure</p>
+            <p className="pressure">{this.state.pressure} hPa</p>
           </div>
+          <div className="humidity-container col-xs-3 text-xs-center">
+            <p className="humidity-title">Humidity</p>
+            <p className="humidity">{this.state.humidity} %</p>
+          </div>
+          <div className="col-xs-3" />
         </div>
       </div>
     )

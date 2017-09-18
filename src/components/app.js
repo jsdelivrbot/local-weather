@@ -53,7 +53,7 @@ export default class App extends Component {
         </div>
         <div className="row">
           <div className="temperature-container col-xs-12">
-            <p className="temperature text-xs-center">{this.state.temperature * (9 / 5) + 32} °F</p>
+            <p className="temperature text-xs-center">{(this.state.temperature * (9 / 5) + 32).toFixed(0)} °F</p>
           </div>
         </div>
         <div className="row">
